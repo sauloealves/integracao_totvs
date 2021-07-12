@@ -1,0 +1,130 @@
+<style>
+  .borda {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+  }
+</style>
+
+<div class="borda">
+    
+    <div class="form-group">
+      <label for="exampleInputEmail1">CPF/CNPJ Fornecedor</label>
+      <input type="text" class="form-control" id="txtCPFCNPJ" placeholder="CPF/CNPJ" [(ngModel)]="cpfcnpj" (blur)="consultaCNPJ()" >
+    </div>
+  
+
+</div>
+
+<div class="borda">
+
+  <div class="form-group">
+    <label for="agenca">Agência</label>
+    <input type="text" class="form-control" id="agencia" placeholder="Agência" value="{{fornecedor.agencia}}">
+  </div>
+
+  <div class="form-group">
+    <label for="bairro">Bairro</label>
+    <input type="text" class="form-control" id="bairro" placeholder="Bairro" value="{{fornecedor.bairro}}">
+  </div>
+
+  <div class="form-group">
+    <label for="banco">Banco</label>
+    <input type="text" class="form-control" id="banco" placeholder="banco" value="{{fornecedor.banco}}">
+  </div>
+
+  <div class="form-group">
+    <label for="cep">CEP</label>
+    <input type="text" class="form-control" id="cep" placeholder="CEP" value="{{fornecedor.cep}}">
+  </div>
+
+  <div class="form-group">
+    <label for="codigoMunicipio">Código Município</label>
+    <input type="text" class="form-control" id="codigoMunicipio" placeholder="Código Município" value="{{fornecedor.codigO_MUNICIPIO}}">
+  </div>
+
+  <div class="form-group">
+    <label for="complemento">Complemento</label>
+    <input type="text" class="form-control" id="complemento" placeholder="Complemento" value="{{fornecedor.complemento}}">
+  </div>
+
+  <div class="form-group">
+    <label for="ddd">DDD</label>
+    <input type="text" class="form-control" id="ddd" placeholder="DDD" value="{{fornecedor.ddd}}">
+  </div>
+
+  <div class="form-group">
+    <label for="dvAgencia">DV - Agencia</label>
+    <input type="text" class="form-control" id="dvAgencia" placeholder="DV-Agencia" value="{{fornecedor.dV_AGENCIA}}">
+  </div>
+
+  <div class="form-group">
+    <label for="dvConta">DV - Conta </label>
+    <input type="text" class="form-control" id="dvConta" placeholder="DV - Conta " value="{{fornecedor.dV_CONTA}}">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email </label>
+    <input type="text" class="form-control" id="email" placeholder="Email " value="{{fornecedor.email}}">
+  </div>
+
+  <div class="form-group">
+    <label for="endereco">Endereço </label>
+    <input type="text" class="form-control" id="endereco" placeholder="Endereço " value="{{fornecedor.endereco}}">
+  </div>
+
+  <div class="form-group">
+    <label for="estado">Estado </label>
+    <input type="text" class="form-control" id="estado" placeholder="Estado " value="{{fornecedor.estado}}">
+  </div>
+
+  <div class="form-group">
+    <label for="inscricaoEstadual">Inscrição Estadual</label>
+    <input type="text" class="form-control" id="inscricaoEstadual" placeholder="Inscrição Estadual" value="{{fornecedor.inscricaO_ESTADUAL}}">
+  </div>
+
+  <div class="form-group">
+    <label for="municipio">Município </label>
+    <input type="text" class="form-control" id="municipio" placeholder="Município " value="{{fornecedor.municipio}}">
+  </div>
+
+  <div class="form-group">
+    <label for="natureza">Natureza</label>
+    <input type="text" class="form-control" id="natureza" placeholder="Natureza" value="{{fornecedor.natureza}}">
+  </div>
+
+  <div class="form-group">
+    <label for="nomeFantasia">Nome Fantasia</label>
+    <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome" value="{{fornecedor.nomE_FANTASIA}}">
+  </div>
+
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" placeholder="Nome" value="{{fornecedor.nomE_FORNECEDOR}}">
+  </div>
+
+   <div class="form-group">
+    <label for="numeroConta">Número Conta</label>
+    <input type="text" class="form-control" id="numeroConta" placeholder="Número conta" value="{{fornecedor.numerO_CONTA}}">
+  </div>
+
+  <div class="form-group">
+    <label for="telefone">Telefone</label>
+    <input type="text" class="form-control" id="telefone" placeholder="Telefone" value="{{fornecedor.telefone}}">
+  </div>
+
+  <div class="form-group">
+    <label for="tipoConta">Tipo Conta</label>
+    <input type="text" class="form-control" id="tipoConta" placeholder="TipoConta" value="{{fornecedor.tipO_CONTA}}">
+  </div>
+
+  <div class="form-group">
+    <label for="tipoFornecedor">Tipo Fornecedor</label>
+    <input type="text" class="form-control" id="tipoFornecedor" placeholder="TipoFornecedor" value="{{fornecedor.tipO_FORNECEDOR}}">
+  </div>
+
+
+</div>
