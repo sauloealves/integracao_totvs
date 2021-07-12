@@ -34,7 +34,7 @@ import { ReceberComponent } from './receber/receber.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'cliente', component: ClienteComponent},
       { path: 'fornecedor', component: FornecedorComponent},
-      { path: 'receber', component: ReceberComponent},
+      { path: 'receber', component: ReceberComponent}
     ])
   ],
   providers: [],

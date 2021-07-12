@@ -9,6 +9,6 @@ namespace Integracao_TOTVS.Interface
     interface ITituloReceber
     {
         RetornoInclusao Incluir(Cliente cliente, TituloReceber titulo);
-        RetornoInclusao Incluir(string dados);
+        RetornoInclusao Incluir(INCLUI_RECEBER dados);
     }
 }

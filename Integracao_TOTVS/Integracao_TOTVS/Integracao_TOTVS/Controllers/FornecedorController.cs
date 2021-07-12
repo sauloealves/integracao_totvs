@@ -27,9 +27,7 @@ namespace Integracao_TOTVS.Controllers
         [HttpGet("{id}")]
         public Fornecedor Get(string id)
         {
-            //return new Fornecedor(urlBase, userAuth).GetFornecedor(id);
-            new TituloReceber(urlBase, userAuth).Incluir("");
-            return null;
+            return new Fornecedor(urlBase, userAuth).GetFornecedor(id);
         }
 
         // POST api/<FornecedorController>

@@ -9,151 +9,158 @@
   }
 </style>
 
-<form>
+<form (ngSubmit)="onSubmit()">
 
   <div class="borda">
 
     <div class="form-group">
+      <label for="cnpjCPF">CNPJ/CPF</label>
+      <input type="text" class="form-control" id="cnpjCPF" placeholder="CPF/CNPJ" [(ngModel)]="titulo.cnpj_cliente" name="cnpj_cliente">
+    </div>
+
+    <div class="form-group">
       <label for="bairroCliente">Bairro</label>
-      <input type="text" class="form-control" id="bairroCliente" placeholder="Bairro">
+      <input type="text" class="form-control" id="bairroCliente" placeholder="Bairro" [(ngModel)]="titulo.bairro" name="bairro">
     </div>
 
     <div class="form-group">
       <label for="cepCliente">CEP</label>
-      <input type="text" class="form-control" id="cepCliente" placeholder="CEP">
+      <input type="text" class="form-control" id="cepCliente" placeholder="CEP" [(ngModel)]="titulo.cep" name="cep">
     </div>
 
     <div class="form-group">
       <label for="codigoMunicipio">Código Município</label>
-      <input type="text" class="form-control" id="codigoMunicipio" placeholder="Código Município">
+      <input type="text" class="form-control" id="codigoMunicipio" placeholder="Código Município" [(ngModel)]="titulo.codigo_municipio" name="codigo_municipio">
     </div>
 
     <div class="form-group">
       <label for="complemento">Complemento</label>
-      <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+      <input type="text" class="form-control" id="complemento" placeholder="Complemento" [(ngModel)]="titulo.complemento" name="complemento">
     </div>
 
     <div class="form-group">
       <label for="ddd">DDD</label>
-      <input type="text" class="form-control" id="ddd" placeholder="DDD">
+      <input type="text" class="form-control" id="ddd" placeholder="DDD" [(ngModel)]="titulo.ddd" name="ddd">
     </div>
 
     <div class="form-group">
       <label for="emailCliente">Email Cliente</label>
-      <input type="text" class="form-control" id="emailCliente" placeholder="Email Cliente">
+      <input type="text" class="form-control" id="emailCliente" placeholder="Email Cliente" [(ngModel)]="titulo.email" name="email">
     </div>
 
     <div class="form-group">
       <label for="enderecoCliente">Endereço Cliente</label>
-      <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço Cliente">
+      <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço Cliente" [(ngModel)]="titulo.endereco" name="endereco">
     </div>
 
     <div class="form-group">
       <label for="estadoCliente">Estado Cliente</label>
-      <input type="text" class="form-control" id="estadoCliente" placeholder="Estado Cliente">
+      <input type="text" class="form-control" id="estadoCliente" placeholder="Estado Cliente" [(ngModel)]="titulo.estado" name="estado">
     </div>
 
     <div class="form-group">
       <label for="inscricaoEstadual">Inscrição Estadual</label>
-      <input type="text" class="form-control" id="inscricaoEstadual" placeholder="Inscrição Estadual">
+      <input type="text" class="form-control" id="inscricaoEstadual" placeholder="Inscrição Estadual" [(ngModel)]="titulo.inscricao_estadual" name="inscricao_estadual">
     </div>
 
     <div class="form-group">
       <label for="municipioCliente">Município Cliente</label>
-      <input type="text" class="form-control" id="municipioCliente" placeholder="Município Cliente">
+      <input type="text" class="form-control" id="municipioCliente" placeholder="Município Cliente" [(ngModel)]="titulo.municipio" name="municipio">
     </div>
 
     <div class="form-group">
       <label for="naturezaCliente">Natureza</label>
-      <input type="text" class="form-control" id="naturezaCliente" placeholder="Natureza">
+      <input type="text" class="form-control" id="naturezaCliente" placeholder="Natureza" [(ngModel)]="titulo.natureza" name="natureza">
     </div>
 
     <div class="form-group">
       <label for="nomeCliente">Nome</label>
-      <input type="text" class="form-control" id="nomeCliente" placeholder="Nome">
+      <input type="text" class="form-control" id="nomeCliente" placeholder="Nome" [(ngModel)]="titulo.nome_cliente" name="nome_cliente">
     </div>
 
     <div class="form-group">
       <label for="nomeFantasia">Nome Fantasia</label>
-      <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome">
+      <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome" [(ngModel)]="titulo.nome_fantasia" name="nome_fantasia">
     </div>
 
     <div class="form-group">
       <label for="telefone">Telefone</label>
-      <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+      <input type="text" class="form-control" id="telefone" placeholder="Telefone" [(ngModel)]="titulo.telefone" name="telefone">
     </div>
 
     <div class="form-group">
       <label for="tipo">Tipo</label>
-      <input type="text" class="form-control" id="tipo" placeholder="Tipo">
+      <input type="text" class="form-control" id="tipo" placeholder="Tipo" [(ngModel)]="titulo.tipo" name="tipo">
     </div>
 
 
     <div class="form-group">
       <label for="natureza">Natureza</label>
-      <input type="text" class="form-control" id="natureza" placeholder="natureza">
+      <input type="text" class="form-control" id="natureza" placeholder="natureza" [(ngModel)]="titulo.natureza" name="natureza">
     </div>
 
     <div class="form-group">
       <label for="filial_titulo">Filial Titulo</label>
-      <input type="text" class="form-control" id="filial_titulo" placeholder="Filial Titulo">
+      <input type="text" class="form-control" id="filial_titulo" placeholder="Filial Titulo" [(ngModel)]="titulo.filial_titulo" name="filial_titulo">
     </div>
 
     <div class="form-group">
       <label for="prefixo_titulo">Prefixo Titulo</label>
-      <input type="text" class="form-control" id="prefixo_titulo" placeholder="Prefixo Titulo">
+      <input type="text" class="form-control" id="prefixo_titulo" placeholder="Prefixo Titulo" [(ngModel)]="titulo.prefixo_titulo" name="prefixo_titulo">
     </div>
 
     <div class="form-group">
       <label for="numero_titulo">Número Titulo</label>
-      <input type="text" class="form-control" id="numero_titulo" placeholder="Número Titulo">
+      <input type="text" class="form-control" id="numero_titulo" placeholder="Número Titulo" [(ngModel)]="titulo.numero_titulo" name="numero_titulo">
     </div>
 
     <div class="form-group">
       <label for="parcela_titulo">Parcela Titulo</label>
-      <input type="text" class="form-control" id="parcela_titulo" placeholder="Parcela Titulo">
+      <input type="text" class="form-control" id="parcela_titulo" placeholder="Parcela Titulo" [(ngModel)]="titulo.parcela_titulo" name="parcela_titulo">
     </div>
 
     <div class="form-group">
       <label for="tipo_titulo">Tipo Título</label>
-      <input type="text" class="form-control" id="tipo_titulo" placeholder="Tipo título">
+      <input type="text" class="form-control" id="tipo_titulo" placeholder="Tipo título" [(ngModel)]="titulo.tipo_titulo" name="tipo_titulo">
     </div>
 
     <div class="form-group">
       <label for="forma_pagamento">Forma de Pagamento</label>
-      <input type="text" class="form-control" id="forma_pagamento" placeholder="Forma de Pagamento">
+      <input type="text" class="form-control" id="forma_pagamento" placeholder="Forma de Pagamento" [(ngModel)]="titulo.forma_pagamento" name="forma_pagamento">
     </div>
 
     <div class="form-group">
       <label for="data_emissao">Data de Emissão</label>
-      <input type="text" class="form-control" id="data_emissao" placeholder="Data de Emissão">
+      <input type="text" class="form-control" id="data_emissao" placeholder="Data de Emissão" [(ngModel)]="titulo.data_emissao" name="data_emissao">
     </div>
 
     <div class="form-group">
       <label for="data_vencimento">Data de Vencimento</label>
-      <input type="text" class="form-control" id="data_vencimento" placeholder="Data de Vencimento">
+      <input type="text" class="form-control" id="data_vencimento" placeholder="Data de Vencimento" [(ngModel)]="titulo.data_vencimento" name="data_vencimento">
     </div>
 
     <div class="form-group">
       <label for="valor_titulo">Valor de Titulo</label>
-      <input type="text" class="form-control" id="valor_titulo" placeholder="Valor de titulo">
+      <input type="text" class="form-control" id="valor_titulo" placeholder="Valor de titulo" [(ngModel)]="titulo.valor_titulo" name="valor_titulo">
     </div>
 
     <div class="form-group">
       <label for="historico">Histórico</label>
-      <input type="text" class="form-control" id="historico" placeholder="Histórico">
+      <input type="text" class="form-control" id="historico" placeholder="Histórico" [(ngModel)]="titulo.historico" name="historico">
     </div>
 
     <div class="form-group">
       <label for="numero_projeto">Número projeto</label>
-      <input type="text" class="form-control" id="numero_projeto" placeholder="Número do projeto">
+      <input type="text" class="form-control" id="numero_projeto" placeholder="Número do projeto" [(ngModel)]="titulo.numero_projeto" name="numero_projeto">
     </div>
 
     <div class="form-group">
       <label for="centro_custo">Centro de custo</label>
-      <input type="text" class="form-control" id="centro_custo" placeholder="Centro de custo">
+      <input type="text" class="form-control" id="centro_custo" placeholder="Centro de custo" [(ngModel)]="titulo.centro_custo" name="centro_custo">
     </div>
-
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary mt-4" value="Salvar">
+    </div>
 
   </div>
 </form>

@@ -28,7 +28,7 @@ namespace Integracao_TOTVS.Model
             throw new NotImplementedException();
         }
 
-        public RetornoInclusao Incluir(string dados)
+        public RetornoInclusao Incluir(INCLUI_RECEBER dados)
         {
             RetornoInclusao retorno = new RetornoInclusao();
 
@@ -40,37 +40,7 @@ namespace Integracao_TOTVS.Model
 
             List<INCLUI_RECEBER> incluireceber = new List<INCLUI_RECEBER>();
 
-            incluireceber.Add(new INCLUI_RECEBER
-            {
-                CNPJ_CLIENTE = "29437740810",
-                TIPO_CLIENTE = "F",
-                NOME_CLIENTE = "SAULO ALVES",
-                NOME_FANTASIA = "SAULO ALVES",
-                ENDERECO = "RUA ITANHANDU 25",
-                COMPLEMENTO = "ALPHAVILLE",
-                BAIRRO = "S.PEDRO",
-                MUNICIPIO = "BELO HORIZONTE",
-                ESTADO = "MG",
-                CODIGO_MUNICIPIO = "06200",
-                CEP = "36037873",
-                INSCRICAO_ESTADUAL = "ISENTO",
-                DDD = "32",
-                TELEFONE = "984015684",
-                EMAIL = "sauloealves@gmail.com",
-                NATUREZA = "301001",
-                FILIAL_TITULO = "0101",
-                PREFIXO_TITULO = "VDA",
-                NUMERO_TITULO = "902612",
-                PARCELA_TITULO = "1",
-                TIPO_TITULO = "BRA",
-                FORMA_PAGAMENTO = "BOL",
-                DATA_EMISSAO = "20210625",
-                DATA_VENCIMENTO = "20210825",
-                VALOR_TITULO = "8332.65",
-                HISTORICO = "",
-                NUMERO_PROJETO = "902119",
-                CENTRO_CUSTO = "0102"
-            });
+            incluireceber.Add(dados);
             
             Teste teste = new Teste() { INCLUI_RECEBER = incluireceber };
 
@@ -134,7 +104,7 @@ namespace Integracao_TOTVS.Model
         public string FORMA_PAGAMENTO { get; set; }
         public string DATA_EMISSAO { get; set; }
         public string DATA_VENCIMENTO { get; set; }
-        public string VALOR_TITULO { get; set; }
+        public Decimal VALOR_TITULO { get; set; }
         public string HISTORICO { get; set; }
         public string NUMERO_PROJETO { get; set; }
         public string CENTRO_CUSTO { get; set; }
