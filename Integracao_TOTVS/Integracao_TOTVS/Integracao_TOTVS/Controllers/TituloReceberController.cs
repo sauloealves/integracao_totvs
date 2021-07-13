@@ -32,9 +32,9 @@ namespace Integracao_TOTVS.Controllers
 
         // POST api/<IncluirReceberController>
         [HttpPost]
-        public RetornoInclusao Post([FromBody] INCLUI_RECEBER receber)
+        public RetornoInclusao Post([FromBody] Inclui_Receber receber)
         {
-            return new TituloReceber(urlBase, userAuth).Incluir(receber);
+            return new TituloReceber(urlBase, userAuth).Incluir(receber);            
         }
 
         // PUT api/<IncluirReceberController>/5

@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { FornecedorComponent } from './fornecedor/fornecedor.component';
 import { ReceberComponent } from './receber/receber.component';
+import { PagarComponent } from './pagar/pagar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReceberComponent } from './receber/receber.component';
     FetchDataComponent,
     ClienteComponent,
     FornecedorComponent,
-    ReceberComponent
+    ReceberComponent,
+    PagarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -34,7 +36,8 @@ import { ReceberComponent } from './receber/receber.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'cliente', component: ClienteComponent},
       { path: 'fornecedor', component: FornecedorComponent},
-      { path: 'receber', component: ReceberComponent}
+      { path: 'receber', component: ReceberComponent},
+      { path: 'pagar', component: PagarComponent}
     ])
   ],
   providers: [],

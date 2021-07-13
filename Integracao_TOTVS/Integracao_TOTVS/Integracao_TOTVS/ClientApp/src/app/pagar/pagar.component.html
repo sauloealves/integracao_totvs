@@ -1,0 +1,211 @@
+<style>
+  .borda {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+  }
+</style>
+
+<form (ngSubmit)="onSubmit()">
+
+  <div class="borda">
+
+    <div class="form-group">
+      <label for="cnpjCPF">CNPJ/CPF</label>
+      <input type="text" class="form-control" id="cnpjCPF" placeholder="CPF/CNPJ" [(ngModel)]="titulo.cnpj_fornecedor" name="cnpj_cliente">
+    </div>
+
+    <div class="form-group">
+      <label for="tipoFornecedor">Tipo</label>
+      <input type="text" class="form-control" id="tipoFornecedor" placeholder="tipo" [(ngModel)]="titulo.tipo_fornecedor" name="tipo_fornecedor">
+    </div>
+
+    <div class="form-group">
+      <label for="nomeFornecedor">Nome</label>
+      <input type="text" class="form-control" id="nomeFornecedor" placeholder="Nome" [(ngModel)]="titulo.nome_fornecedor" name="nome_fornecedor">
+    </div>
+
+    <div class="form-group">
+      <label for="nomeFantasia">Nome Fantasia</label>
+      <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome" [(ngModel)]="titulo.nome_fantasia" name="nome_fantasia">
+    </div>
+
+    <div class="form-group">
+      <label for="enderecoCliente">Endereço Cliente</label>
+      <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço Cliente" [(ngModel)]="titulo.endereco" name="endereco">
+    </div>
+
+    <div class="form-group">
+      <label for="complemento">Complemento</label>
+      <input type="text" class="form-control" id="complemento" placeholder="Complemento" [(ngModel)]="titulo.complemento" name="complemento">
+    </div>
+
+    <div class="form-group">
+      <label for="bairroCliente">Bairro</label>
+      <input type="text" class="form-control" id="bairroCliente" placeholder="Bairro" [(ngModel)]="titulo.bairro" name="bairro">
+    </div>
+
+    <div class="form-group">
+      <label for="municipio">Município</label>
+      <input type="text" class="form-control" id="municipio" placeholder="Municipio" [(ngModel)]="titulo.municipio" name="municipio">
+    </div>
+
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" class="form-control" id="estado" placeholder="Estado" [(ngModel)]="titulo.estado" name="estado">
+    </div>
+
+    <div class="form-group">
+      <label for="codigoMunicipio">Código Município</label>
+      <input type="text" class="form-control" id="codigoMunicipio" placeholder="Código Município" [(ngModel)]="titulo.codigo_municipio" name="codigo_municipio">
+    </div>
+
+    <div class="form-group">
+      <label for="cepCliente">CEP</label>
+      <input type="text" class="form-control" id="cepCliente" placeholder="CEP" [(ngModel)]="titulo.cep" name="cep">
+    </div>
+
+    <div class="form-group">
+      <label for="inscricaoEstadual">Inscrição Estadual</label>
+      <input type="text" class="form-control" id="inscricaoEstadual" placeholder="Inscrição Estadual" [(ngModel)]="titulo.inscricao_estadual" name="inscricao_estadual">
+    </div>
+
+    <div class="form-group">
+      <label for="ddd">DDD</label>
+      <input type="text" class="form-control" id="ddd" placeholder="DDD" [(ngModel)]="titulo.ddd" name="ddd">
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Telefone</label>
+      <input type="text" class="form-control" id="telefone" placeholder="Telefone" [(ngModel)]="titulo.telefone" name="telefone">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" placeholder="Email" [(ngModel)]="titulo.email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="naturezaCliente">Natureza</label>
+      <input type="text" class="form-control" id="naturezaCliente" placeholder="Natureza" [(ngModel)]="titulo.natureza" name="natureza">
+    </div>
+
+    <div class="form-group">
+      <label for="banco_fornec">banco_fornec</label>
+      <input type="text" class="form-control" id="banco_fornec" placeholder="banco_fornec" [(ngModel)]="titulo.banco_fornec" name="banco_fornec">
+    </div>
+
+    <div class="form-group">
+      <label for="agencia_fornec">agencia_fornec</label>
+      <input type="text" class="form-control" id="agencia_fornec" placeholder="agencia_fornec" [(ngModel)]="titulo.agencia_fornec" name="agencia_fornec">
+    </div>
+
+    <div class="form-group">
+      <label for="dv_agencia_fornec">dv_agencia_fornec</label>
+      <input type="text" class="form-control" id="dv_agencia_fornec" placeholder="dv_agencia_fornec" [(ngModel)]="titulo.dv_agencia_fornec" name="dv_agencia_fornec">
+    </div>
+
+    <div class="form-group">
+      <label for="numero_conta_fornec">numero_conta_fornec</label>
+      <input type="text" class="form-control" id="numero_conta_fornec" placeholder="numero_conta_fornec" [(ngModel)]="titulo.numero_conta_fornec" name="numero_conta_fornec">
+    </div>
+
+    <div class="form-group">
+      <label for="dv_conta_fornec">dv_conta_fornec</label>
+      <input type="text" class="form-control" id="dv_conta_fornec" placeholder="dv_conta_fornec" [(ngModel)]="titulo.dv_conta_fornec" name="dv_conta_fornec">
+    </div>
+
+    <div class="form-group">
+      <label for="tipo_conta_fornec">tipo_conta_fornec</label>
+      <input type="text" class="form-control" id="tipo_conta_fornec" placeholder="tipo_conta_fornec" [(ngModel)]="titulo.tipo_conta_fornec" name="tipo_conta_fornec">
+    </div>
+
+    <div class="form-group">
+      <label for="filial_titulo">filial_titulo</label>
+      <input type="text" class="form-control" id="filial_titulo" placeholder="filial_titulo" [(ngModel)]="titulo.filial_titulo" name="filial_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="prefixo_titulo">prefixo_titulo</label>
+      <input type="text" class="form-control" id="prefixo_titulo" placeholder="prefixo_titulo" [(ngModel)]="titulo.prefixo_titulo" name="prefixo_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="numero_titulo">numero_titulo</label>
+      <input type="text" class="form-control" id="numero_titulo" placeholder="numero_titulo" [(ngModel)]="titulo.numero_titulo" name="numero_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="parcela_titulo">parcela_titulo</label>
+      <input type="text" class="form-control" id="parcela_titulo" placeholder="parcela_titulo" [(ngModel)]="titulo.parcela_titulo" name="parcela_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="tipo_titulo">tipo_titulo</label>
+      <input type="text" class="form-control" id="tipo_titulo" placeholder="tipo_titulo" [(ngModel)]="titulo.tipo_titulo" name="tipo_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="data_emissao">data_emissao</label>
+      <input type="text" class="form-control" id="data_emissao" placeholder="data_emissao" [(ngModel)]="titulo.data_emissao" name="data_emissao">
+    </div>
+
+    <div class="form-group">
+      <label for="data_vencimento">data_vencimento</label>
+      <input type="text" class="form-control" id="data_vencimento" placeholder="data_vencimento" [(ngModel)]="titulo.data_vencimento" name="data_vencimento">
+    </div>
+
+    <div class="form-group">
+      <label for="valor_titulo">valor_titulo</label>
+      <input type="text" class="form-control" id="valor_titulo" placeholder="valor_titulo" [(ngModel)]="titulo.valor_titulo" name="valor_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="historico">historico</label>
+      <input type="text" class="form-control" id="historico" placeholder="historico" [(ngModel)]="titulo.historico" name="historico">
+    </div>
+
+    <div class="form-group">
+      <label for="numero_projeto">numero_projeto</label>
+      <input type="text" class="form-control" id="numero_projeto" placeholder="numero_projeto" [(ngModel)]="titulo.numero_projeto" name="numero_projeto">
+    </div>
+
+    <div class="form-group">
+      <label for="centro_custo">centro_custo</label>
+      <input type="text" class="form-control" id="centro_custo" placeholder="centro_custo" [(ngModel)]="titulo.centro_custo" name="centro_custo">
+    </div>
+
+    <div class="form-group">
+      <label for="banco_titulo">banco_titulo</label>
+      <input type="text" class="form-control" id="banco_titulo" placeholder="banco_titulo" [(ngModel)]="titulo.banco_titulo" name="banco_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="agencia_titulo">agencia_titulo</label>
+      <input type="text" class="form-control" id="agencia_titulo" placeholder="agencia_titulo" [(ngModel)]="titulo.agencia_titulo" name="agencia_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="dv_agencia_titulo">dv_agencia_titulo</label>
+      <input type="text" class="form-control" id="dv_agencia_titulo" placeholder="dv_agencia_titulo" [(ngModel)]="titulo.dv_agencia_titulo" name="dv_agencia_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="numero_conta_titulo">numero_conta_titulo</label>
+      <input type="text" class="form-control" id="numero_conta_titulo" placeholder="numero_conta_titulo" [(ngModel)]="titulo.numero_conta_titulo" name="numero_conta_titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="dv_conta_titulo">dv_conta_titulo</label>
+      <input type="text" class="form-control" id="dv_conta_titulo" placeholder="dv_conta_titulo" [(ngModel)]="titulo.dv_conta_titulo" name="dv_conta_titulo">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary mt-4" value="Salvar">
+    </div>
+
+  </div>
+</form>

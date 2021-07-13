@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Integracao_TOTVS.Interface
 {
-    interface ITituloReceber
+    public interface IVenda
     {
-        RetornoInclusao Incluir(Cliente cliente, TituloReceber titulo);
-        RetornoInclusao Incluir(Inclui_Receber dados);
+        RetornoInclusao NovaVenda(Cliente cliente, TituloReceber titulo);
+        RetornoInclusao NovaVenda(Venda dados);
+
     }
 }
